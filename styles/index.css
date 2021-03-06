@@ -1,0 +1,32 @@
+.bg-img{
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-position: center center;
+    background-size: cover;
+    background-color: #464646;
+}
+
+#btn-post-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 86vh;
+}
+
+
+
+.btn-post{
+    background-color: #CFB53B;
+    color: black;
+    padding: 11px 35px;
+    font-size: 1em;
+    border: 1px #908e8e solid;
+    box-shadow: -0.5px -1px 1px #fff;
+    margin-right: 20px;
+}
+
+.pd-11-20{
+    padding: 11px 20px;
+}
