@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+
     <link href="styles/common.css" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
     <title>ScriBBler</title>
@@ -17,16 +19,92 @@
                 <div id="logo-sub-heading">Explore, Imagine, Create</div>
             </div>
             <div id="header-right">
-                <button onclick="" class="btn-sign mg-rt-15" type="button">Sign Up</button>
-                <button onclick="" class="btn-sign" type="button">Sign In</button>
+                <button id="signupBtn" class="btn-sign mg-rt-15" type="button">Sign Up</button>
+                <button id="signinBtn" onclick="" class="btn-sign" type="button">Sign In</button>
             </div>
         </header>
 
         <div id="btn-post-group">
-            <button onclick="" class="btn-post" type="button">All Posts</button>
-            <button onclick="" class="btn-post pd-11-20" type="button">Create Post</button>
+            <a href="html/bloglist.html">
+                <button class="btn-post" type="button" >All Posts</button>
+            </a>
+            <button id="createPostBtn" class="btn-post pd-11-20" type="button">Create Post</button>
         </div>
     </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content wd-25-per">
+            <div class="modal-head">
+                <span class="modal-title">Get Started</span>
+                <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <label class="modal-label">Name</label>
+                    <input type="text" name="personalname" value="" placeholder="Enter your name" class="modal-input" required>
+
+                    <label class="modal-label">Username</label>
+                    <input type="text" name="username" value="" placeholder="Enter your username" class="modal-input" required>
+
+                    <label class="modal-label">Password</label>
+                    <input type="text" name="password" value="" placeholder="Enter your password" class="modal-input" required>
+
+                    <label class="modal-label">Confirm Password</label>
+                    <input type="text" name="confirm-password" value="" placeholder="Re-enter your password" class="modal-input" required>
+                    
+                    <input type="submit" value="Sign Up" class="modal-action-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="signinModal" class="modal">
+        <div class="modal-content wd-25-per">
+            <div class="modal-head">
+                <span class="modal-title">Welcome Back!</span>
+                <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+            <div class="modal-body">
+                <form>
+
+                    <label class="modal-label">Username</label>
+                    <input type="text" name="username" value="" placeholder="Enter your username" class="modal-input" required>
+
+                    <label class="modal-label">Password</label>
+                    <input type="text" name="password" value="" placeholder="Enter your password" class="modal-input" required>
+
+                    <input type="submit" value="Sign In" class="modal-action-btn">
+
+                    <div class="modal-footer">
+                        <strong>Not a member? <a href="javascript:void()" id="signup_link">Sign Up</a></strong>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="createPostModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-head">
+                <span class="modal-title">Pen Your Post</span>
+                <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <label class="modal-label">Title</label>
+                    <input type="text" name="title" value="" placeholder="Enter title of your post" class="modal-input wd-98-per" required>
+
+                    <label class="modal-label">Contents</label>
+                    <!-- <input type="text" name="username" value="" placeholder="Enter your username" class="modal-input" required> -->
+                    <textarea placeholder="Enter the contents of your post" rows="18" class="modal-input wd-98-per" required></textarea>
+                    <input type="submit" value="Create" class="modal-action-btn btn-center">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
 <script src="scripts/common.js"></script>
 <script src="scripts/index.js"></script>
