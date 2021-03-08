@@ -1,14 +1,15 @@
-.bg-post{
+.bg-post {
     background-color: #ffeedd;
 }
 
-.post-container{
+.post-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-right: 50px;
 }
 
-.post-item{
+.post-item {
     background-color: #E8E8E8;
     width: 36em;
     display: flex;
@@ -19,11 +20,11 @@
     margin-top: 30px;
 }
 
-.post-item:hover{
+.post-item:hover {
     box-shadow: 8px 37px 50px -24px #98868696
 }
 
-.post-user{
+.post-user {
     background-color: white;
     padding: 0px 12px;
     display: flex;
@@ -33,12 +34,12 @@
     font-weight: bold;
 }
 
-.post-content{
+.post-content {
     display: flex;
     flex-direction: column;
 }
 
-.post-title{
+.post-title {
     color: #878787;
     display: flex;
     flex-direction: row;
@@ -47,61 +48,71 @@
     font-size: 1.136em;
 }
 
-.post-title > p{
+.post-title > p {
     width: 23em;
 }
 
-.post-text{
+.post-text {
     margin-left: 20px;
     font-size: 1em;
     margin-top: 0em;
     margin-right: 1em;
-    word-break: break-word;
+    height: 55px;
+    overflow: hidden;
 }
 
-.post-delete{
+.post-delete {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 30px;
 }
 
-.post-bottom, .post-bottom > a{
+.post-bottom, .post-bottom > a {
     display: flex;
     justify-content: flex-end;
     color: #878787;
     height: 25px;
     text-decoration: none;
 }
-.fa-ellipsis-h{
+
+.fa-ellipsis-h {
     width: 30px
 }
+
 .fas {
     cursor: pointer;
 }
-.modal-action-btn.confirm{
+
+.modal-action-btn.confirm {
     width: 24%;
 }
-.modal-body.confirm{
+
+.modal-body.confirm {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.btn-red{
+
+.btn-red {
     background-color: #D13939;
 }
-.modal-head.confirm{
+
+.modal-head.confirm {
     text-align: center;
     margin-bottom: 1em;
     border-bottom: none;
 }
-.modal-title.confirm{
+
+.modal-title.confirm {
     font-size: 1.1em;
     color: black;
 }
-.wd-25-per.confirm{
+
+.wd-25-per.confirm {
     margin-top: 11em;
 }
-.close:hover,.close:focus{
+
+.close.confirm:hover,.close.confirm:focus {
     color: white;
 }

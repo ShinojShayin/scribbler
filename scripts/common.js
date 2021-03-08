@@ -1,3 +1,4 @@
+// This method helps in initializing modal. Parameters needed to be passed include modalId, 
 function initModal(modalId, buttonId, isClass){
   // Get the modal
   var modal = document.getElementById(modalId);
@@ -28,6 +29,7 @@ function initModal(modalId, buttonId, isClass){
   }
 }
 
+// Common header code start here
 var headerEle = document.getElementsByTagName('header')[0];
 headerEle.innerHTML = '<div id="header-left">' +
 '<div id="logo-heading">ScriBBler</div>' +
@@ -37,10 +39,16 @@ headerEle.innerHTML = '<div id="header-left">' +
 '<button id="signupBtn" class="btn-sign mg-rt-15" type="button">Sign Up</button>' +
 '<button id="signinBtn" onclick="" class="btn-sign" type="button">Sign In</button>' +
 '</div>';
+// Common header code end here
 
+// Common Initialization Code Start here
 initModal('signupModal','signupBtn');
 initModal('signinModal','signinBtn');
-
+document.getElementById('signup_link').onclick = function() {
+  document.getElementById('signinModal').style.display = "none";
+  document.getElementById('signupModal').style.display = "block";
+}
+// Common Initialization Code end here
 
 
 

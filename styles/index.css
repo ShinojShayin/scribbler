@@ -1,4 +1,4 @@
-.bg-img{
+.bg-img {
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;  
@@ -7,7 +7,7 @@
     background-color: #464646;
 }
 
-#btn-post-group{
+#btn-post-group {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -15,7 +15,7 @@
     height: 86vh;
 }
 
-.btn-post{
+.btn-post {
     background-color: #CFB53B;
     color: black;
     padding: 11px 35px;
@@ -25,15 +25,11 @@
     margin-right: 20px;
 }
 
-.pd-11-20{
+.pd-11-20 {
     padding: 11px 20px;
 }
 
-#signup_link{
-    text-decoration: none;
-}
-
-.btn-center{
+.btn-center {
     margin: 0px 44%;
     width: 130px;
     margin-top: 1%;

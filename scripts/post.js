@@ -1,7 +1,4 @@
-document.getElementById('savePost').onclick = function(){
-
-}
-
+// Onclick of edit button makes post title and body editable
 document.getElementById('editPost').onclick = function(){
     var titleEle =  document.getElementById('title-text');
     var postTextEle = document.getElementById('post-text');
@@ -14,6 +11,7 @@ document.getElementById('editPost').onclick = function(){
     document.getElementById('savePost').style.display = "block";
 }
 
+// Onclick of save button makes post title and body non-editable and save any changes
 document.getElementById('savePost').onclick = function(){
     this.style.display = "none";
     document.getElementById('editPost').style.display = "block";
@@ -25,6 +23,7 @@ document.getElementById('savePost').onclick = function(){
     postTextEle.className = 'post-body';
 }
 
+// Onclick of like button it will change respective text and increment the counter
 document.getElementById('likeBtn').onclick = function(){
     var likeCount = this.getAttribute('like-count');
     if(!likeCount)likeCount=1;
@@ -42,6 +41,7 @@ document.getElementById('likeBtn').onclick = function(){
     }
 }
 
+// Onclick of submit button it will add the comment to All comments section
 document.getElementById('submit-comment').onclick = function(){
     var commentBox = document.getElementById('commentbox');
     var comment = commentBox.value

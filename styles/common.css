@@ -1,27 +1,30 @@
-body {font-family: Arial, Helvetica, sans-serif;}
-header{
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.mg-rt-15{
+.mg-rt-15 {
     margin-right: 15px;
 }
 
-#logo-heading{
+#logo-heading {
     font-family: 'Montez', cursive; 
     color: blue;
     font-size: 2.3em;
 }
 
-#logo-sub-heading{
+#logo-sub-heading {
     font-family: 'Ubuntu Mono';
     color: black;
     font-size: 1em;
 }
 
-.btn-sign{
+.btn-sign {
     background-color: blue;
     color: white;
     padding: 10px 22px;
@@ -29,7 +32,7 @@ header{
     border: 2px #666161 solid;
 }
 
-.container{
+.container {
     margin: 5px 5px;
     margin-bottom: 50px;
 }
@@ -66,29 +69,28 @@ header{
     font-weight: bold;
   }
   
-  .close:hover,
-  .close:focus {
+  .close:hover, .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
   }
 
-  .wd-25-per{
+  .wd-25-per {
     width: 25%;
   }
 
-  .modal-head{
+  .modal-head {
     padding-bottom: 10px;
     border-bottom: 2px solid #b0b0b0;
    
   }
 
-.modal-title{
+.modal-title {
     color: #6d6868;
     font-size: 1.28em;
 }
 
-.modal-input{
+.modal-input {
     width: 92%;
     padding: 12px;
     margin: 5px 0 10px 0;
@@ -97,14 +99,14 @@ header{
     background: #f1f1f1;
 }
 
-.modal-label{
+.modal-label {
     margin-top: 10px;
     margin-bottom: 3px;
     display: block;
     color: #303030;
 }
 
-.modal-action-btn{
+.modal-action-btn {
     background-color: #4CAF50;
     color: white;
     padding: 11px 0px;
@@ -117,16 +119,20 @@ header{
     font-weight: bold;
 }
 
-.modal-footer{
+.modal-footer {
     text-align: center;
     font-size: 0.8em;
     margin-top: 13px;
 }
 
-.wd-98-per{
+.wd-98-per {
     width: 98%;
 }
 
-.hide{
+.hide {
     display: none;
+}
+
+#signup_link {
+    text-decoration: none;
 }

@@ -10,11 +10,15 @@
         <title>ScriBBler - Post</title>
     </head>
     <body>
+        <!-- Main page container start here -->
         <div class="container">
             <!-- HTML inside header tag will be dynamically included from common.js, this will help to maintain common html code in all page -->
             <header></header>
 
+            <!-- Main Post Container start here-->
             <div class="post-container">
+
+                <!-- Post Head Start here -->
                 <div class="post-head"><h3 id="title-text">Everything you should know about ‘module’ & ‘require’ in Node.js</h3></div>
                 <div class="post-sub-head">
                     <span class="post-author">Srishti Gupta</span>
@@ -23,6 +27,9 @@
                         <button id="editPost" class="post-btn" tabindex="-1">Edit <i class="fas fa-edit"></i></button>
                     </span>
                 </div>
+                <!-- Post Head end here -->
+
+                <!-- Post body start here -->
                 <div class="post-body" id="post-text">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you
                     can say that you've created a module named xyz. Let’s take an example to understand this better. You have a file named circle.js which consists of the logic for calculating the area & the
                     circumference of a circle of a given radius. You can call circle.js file a module named circle. You might be wondering why is there a need to have multiple modules? You could have just
@@ -46,25 +53,33 @@
                     exports and the value corresponding to this key is {} (an empty object). Now, what does the module.exports object do? Well, it is used for defining stuff that can be exported by a module.
                     Whatever is exported from a module can, in turn, be made available to other modules. Exporting something is quite easy. You just need to add it to the module.exports object. There are three
                     ways to add something to the module.exports object to be exported. Let’s discuss these methods one by one.
-                    </div>
+                </div>
+                 <!-- Post body end here -->
+
+                <!-- Post like start here -->
                 <div class="post-like">
                     <div><button id="likeBtn" class="post-btn" tabindex="-1"><i class="fas fa-thumbs-up"></i> <span id="like-text">Like</span></span></button></div>
                     <div id="liked-people">Be the first one to like this!</div>
                 </div>
+                <!-- Post like end here -->
+
+                <!-- Post comment start here -->
                 <div class="post-comment">
                    <textarea id="commentbox" placeholder="Leave a comment..."></textarea>
                    <div><button id="submit-comment" class="post-btn" tabindex="-1"> Comment </button></div>
                    <div class="user-comments-title"><strong>All Comments</strong></div>
                    <div id="user-comments-section">
                         <div class="user-comment">Great post! Thanks!</div>
-
                    </div>
                 </div>
+                <!-- Post comment end here -->
 
             </div>
+             <!-- Main Post Container end here-->
         </div>
+        <!-- Main page container end here -->
 
-
+        <!-- Signup and Signin Modal Include Start here -->
         <div id="signupModal" class="modal">
             <div class="modal-content wd-25-per">
                 <div class="modal-head">
@@ -109,12 +124,13 @@
                         <input type="submit" value="Sign In" class="modal-action-btn">
     
                         <div class="modal-footer">
-                            <strong>Not a member? <a href="javascript:void()" id="signup_link">Sign Up</a></strong>
+                            <strong>Not a member? <a href="javascript:void(0);" id="signup_link">Sign Up</a></strong>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+        <!-- Signup and Signin Modal Include end here -->
     </body>
     <script src="https://kit.fontawesome.com/d7ede91b0b.js" crossorigin="anonymous"></script>
     <script src="..\scripts\common.js"></script>

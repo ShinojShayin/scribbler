@@ -1,13 +1,13 @@
-.post-head{
+.post-head {
     text-align: center;
 }
 
-.post-container{
+.post-container {
     display: flex;
     flex-direction: column;
 }
 
-.post-sub-head{
+.post-sub-head {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,11 +15,11 @@
     margin-bottom: 15px;
 }
 
-.post-author{
+.post-author {
     font-family: 'Ubuntu Mono';
 }
 
-.post-btn{
+.post-btn {
     background-color: #ED2553;
     color: white;
     padding: 10px 12px;
@@ -28,47 +28,48 @@
     border: none;
     outline:none;
 }
-.post-btn:active{
+
+.post-btn:active {
     box-shadow: none;
     border:none
 }
 
-.post-container{
+.post-container {
     margin: 15px 37px 5px 37px;
 }
 
-.post-body{
+.post-body {
     font-family: serif;
     font-size: 11.9px;
     text-align: justify;
 }
 
-.post-like{
+.post-like {
     margin: 17px 0px;
 }
 
-#liked-people{
+#liked-people {
     font-family: 'Ubuntu Mono';
     font-size: 0.8em;
     margin-top: 10px;
 }
 
-#commentbox{
+#commentbox {
     width: 100%;
     height: 70px;
     margin-bottom: 10px;
 }
-.post-comment{
+.post-comment {
     width: 62em;
 }
 
-.user-comments-title{
+.user-comments-title {
     margin-top: 22px;
     font-size: 0.9em;
     margin-bottom: 15px;
 }
 
-.user-comment{
+.user-comment {
     background-color: white;
     padding: 17px 10px;
     font-family: serif;
@@ -76,16 +77,16 @@
     margin-bottom: 10px;
 }
 
-#user-comments-section{
+#user-comments-section {
     background-color: #E2E4E6;
     padding: 15px 8px 12px 8px;
 }
 
-.editable{
+.editable {
     border:2px solid pink;
     outline: none;
 }
 
-.editable:focus{
+.editable:focus {
     border:3px solid pink ;
 }

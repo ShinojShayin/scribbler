@@ -11,7 +11,9 @@
     <title>ScriBBler</title>
 </head>
 <body class="bg-img">
+    <!-- Main page container start here -->
     <div class="container">
+        <!-- HTML inside header tag will be dynamically included from common.js, this will help to maintain common html code in all page -->
         <header></header>
 
         <div id="btn-post-group">
@@ -20,8 +22,33 @@
             </a>
             <button id="createPostBtn" class="btn-post pd-11-20" type="button">Create Post</button>
         </div>
+        
     </div>
+    <!-- Main page container end here -->
 
+    <!-- Create Post Modal Start here -->
+    <div id="createPostModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-head">
+                <span class="modal-title">Pen Your Post</span>
+                <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+            <div class="modal-body">s
+                <form>
+                    <label class="modal-label">Title</label>
+                    <input type="text" name="title" value="" placeholder="Enter title of your post" class="modal-input wd-98-per" required>
+
+                    <label class="modal-label">Contents</label>
+                    <!-- <input type="text" name="username" value="" placeholder="Enter your username" class="modal-input" required> -->
+                    <textarea placeholder="Enter the contents of your post" rows="18" class="modal-input wd-98-per" required></textarea>
+                    <input type="submit" value="Create" class="modal-action-btn btn-center">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Create Post Modal end here -->
+
+    <!-- Signup and Signin Modal Include Start here -->
     <div id="signupModal" class="modal">
         <div class="modal-content wd-25-per">
             <div class="modal-head">
@@ -66,32 +93,13 @@
                     <input type="submit" value="Sign In" class="modal-action-btn">
 
                     <div class="modal-footer">
-                        <strong>Not a member? <a href="javascript:void()" id="signup_link">Sign Up</a></strong>
+                        <strong>Not a member? <a href="javascript:void(0);" id="signup_link">Sign Up</a></strong>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-
-    <div id="createPostModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-head">
-                <span class="modal-title">Pen Your Post</span>
-                <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <label class="modal-label">Title</label>
-                    <input type="text" name="title" value="" placeholder="Enter title of your post" class="modal-input wd-98-per" required>
-
-                    <label class="modal-label">Contents</label>
-                    <!-- <input type="text" name="username" value="" placeholder="Enter your username" class="modal-input" required> -->
-                    <textarea placeholder="Enter the contents of your post" rows="18" class="modal-input wd-98-per" required></textarea>
-                    <input type="submit" value="Create" class="modal-action-btn btn-center">
-                </form>
-            </div>
-        </div>
-    </div>
+    <!-- Signup and Signin Modal Include end here -->
 
 
 
