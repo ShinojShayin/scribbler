@@ -130,7 +130,7 @@
         width: 84%;
     }
 
-    .post-text{
+    .post-text {
         font-size: 0.8em;
         margin-left: 13px;
 
@@ -139,12 +139,12 @@
     
 
 
-    .post-title{
+    .post-title {
         font-size: 0.8em;
         margin-left: 13px;
     }
 
-    .post-user{
+    .post-user {
         font-size: 0.8em;
     }
 
@@ -156,17 +156,21 @@
 }
 
 @media only screen and (max-width: 1331px) {
-    .post-text{
+
+    .post-text {
         margin-bottom: 4%;
     }
+
 }
 
 
 @media only screen and (max-width: 1240px) {
+
     .post-text {
         margin-bottom: 4%;
         height: 40%;
     }
+
     .lh2 {
         margin-bottom: 5%;
     }
@@ -189,9 +193,9 @@
 
 @media only screen and (max-width: 1054px) {
 
-    .post-bottom, .post-bottom > a{
-    right: 9px;
-    bottom: 0px;
+    .post-bottom, .post-bottom > a {
+        right: 9px;
+        bottom: 0px;
     }
 
     .post-text{
@@ -202,11 +206,12 @@
 }
 
 @media only screen and (max-width: 953px) {
-    .post-item{
 
+    .post-item {
         margin-top: 30px;
         margin-left: 43px;
     }
+
     .post-container {
         display: flex;
         flex-wrap: wrap;
@@ -215,9 +220,9 @@
 }
 
 @media only screen and (max-width: 833px) {
-    .post-text{
+
+    .post-text {
         height: 34%;
     }
-   
    
 }
