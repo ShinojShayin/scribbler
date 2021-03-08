@@ -1,6 +1,4 @@
 
-initModal('signupModal','signupBtn');
-initModal('signinModal','signinBtn');
 var contentText = document.getElementsByClassName("post-text");
 for(var i=0; i < contentText.length; i++){
   

@@ -38,6 +38,9 @@ headerEle.innerHTML = '<div id="header-left">' +
 '<button id="signinBtn" onclick="" class="btn-sign" type="button">Sign In</button>' +
 '</div>';
 
+initModal('signupModal','signupBtn');
+initModal('signinModal','signinBtn');
+
 
 
 
