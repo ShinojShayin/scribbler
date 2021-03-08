@@ -30,6 +30,7 @@ header {
     padding: 10px 22px;
     font-size: 0.8em;
     border: 2px #666161 solid;
+    cursor: pointer;
 }
 
 .container {

@@ -1,6 +1,17 @@
 initModal('deleteConfirmModal','fa-trash',true);
 
-// Add event delete confirmation Modal start here
+var contentText = document.getElementsByClassName("post-text");
+for(var i=0; i < contentText.length; i++){
+  
+    if(i==2){
+        contentText[i].innerHTML = contentText[i].innerHTML.substring(0,175)
+    }
+    else {
+        contentText[i].innerHTML = contentText[i].innerHTML.substring(0,180)
+    }
+}
+
+// Add event delete confirmation Modal start here //
 var curPostEle;
 var confirmDeleteIco = document.getElementsByClassName('fa-trash')
 for(var i=0; i < confirmDeleteIco.length; i++){
@@ -10,7 +21,7 @@ for(var i=0; i < confirmDeleteIco.length; i++){
   curPostEle = this.parentNode.parentNode.parentNode.parentNode;
   }
 }
-// Add event delete confirmation Modal end here
+// Add event delete confirmation Modal end here //
 
 // On successful confirmation of delete this will deleteBtn click event will delete the post
 var deleteBtn = document.getElementById('deleteBtn');

@@ -23,6 +23,7 @@
     border: 1px #908e8e solid;
     box-shadow: -0.5px -1px 1px #fff;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .pd-11-20 {
@@ -33,4 +34,5 @@
     margin: 0px 44%;
     width: 130px;
     margin-top: 1%;
+
 }

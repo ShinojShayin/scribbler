@@ -27,6 +27,7 @@
     box-shadow: 1px 4px 9px 0px #ed25537d;
     border: none;
     outline:none;
+    cursor: pointer;
 }
 
 .post-btn:active {

@@ -11,13 +11,15 @@
 
 .post-item {
     background-color: #E8E8E8;
-    width: 36em;
+    width: 40%;
     display: flex;
     flex-direction: row;
     border-radius: 15px;
     box-shadow: 3px 3px 15px -1px #988686;
     margin-left: 87px;
     margin-top: 30px;
+    height: 100%;
+    position: relative;
 }
 
 .post-item:hover {
@@ -32,6 +34,8 @@
     border-radius: 15px 0px 0px 15px;
     color: #707070;
     font-weight: bold;
+    font-size: 0.9em;
+    text-align: center;
 }
 
 .post-content {
@@ -57,23 +61,26 @@
     font-size: 1em;
     margin-top: 0em;
     margin-right: 1em;
-    height: 55px;
+    height: 42%;
     overflow: hidden;
 }
 
+
+
 .post-delete {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 30px;
+    top: 12px;
+    right: 20px;
+    position: absolute;
+    font-size: 0.9em;
 }
 
 .post-bottom, .post-bottom > a {
-    display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    right: 9px;
     color: #878787;
-    height: 25px;
     text-decoration: none;
+    bottom: 5px;
+}
 }
 
 .fa-ellipsis-h {
@@ -115,4 +122,102 @@
 
 .close.confirm:hover,.close.confirm:focus {
     color: white;
+}
+
+@media only screen and (max-width: 1443px) {
+
+    .post-content {
+        width: 84%;
+    }
+
+    .post-text{
+        font-size: 0.8em;
+        margin-left: 13px;
+
+        margin-bottom: 4%;
+    }
+    
+
+
+    .post-title{
+        font-size: 0.8em;
+        margin-left: 13px;
+    }
+
+    .post-user{
+        font-size: 0.8em;
+    }
+
+    .post-title > p {
+        width: 22em;
+    }
+
+    
+}
+
+@media only screen and (max-width: 1331px) {
+    .post-text{
+        margin-bottom: 4%;
+    }
+}
+
+
+@media only screen and (max-width: 1240px) {
+    .post-text {
+        margin-bottom: 4%;
+        height: 40%;
+    }
+    .lh2 {
+        margin-bottom: 5%;
+    }
+}
+
+@media(max-width: 1228px) {
+
+    .post-text {
+        height: 35%;
+    }
+
+    .lh1 {
+        height: 40%;
+    }
+
+    .lh2 {
+        height: 40%;
+    }
+}
+
+@media only screen and (max-width: 1054px) {
+
+    .post-bottom, .post-bottom > a{
+    right: 9px;
+    bottom: 0px;
+    }
+
+    .post-text{
+        font-size: 0.7em;
+        margin-bottom: 1%;
+        height: 39%;
+    }
+}
+
+@media only screen and (max-width: 953px) {
+    .post-item{
+
+        margin-top: 30px;
+        margin-left: 43px;
+    }
+    .post-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+   
+}
+
+@media only screen and (max-width: 833px) {
+    .post-text{
+        height: 34%;
+    }
+   
+   
 }
