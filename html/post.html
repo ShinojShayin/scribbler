@@ -15,12 +15,15 @@
             <header></header>
 
             <div class="post-container">
-                <div class="post-head"><h3>Everything you should know about ‘module’ & ‘require’ in Node.js</h3></div>
+                <div class="post-head"><h3 id="title-text">Everything you should know about ‘module’ & ‘require’ in Node.js</h3></div>
                 <div class="post-sub-head">
                     <span class="post-author">Srishti Gupta</span>
-                    <span><button class="post-btn" tabindex="-1">Edit <i class="fas fa-edit"></i></button></span>
+                    <span>
+                        <button id="savePost" class="post-btn hide" tabindex="-1">Save&nbsp; <i class="fas fa-save"></i></button>
+                        <button id="editPost" class="post-btn" tabindex="-1">Edit <i class="fas fa-edit"></i></button>
+                    </span>
                 </div>
-                <div class="post-body">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you
+                <div class="post-body" id="post-text">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you
                     can say that you've created a module named xyz. Let’s take an example to understand this better. You have a file named circle.js which consists of the logic for calculating the area & the
                     circumference of a circle of a given radius. You can call circle.js file a module named circle. You might be wondering why is there a need to have multiple modules? You could have just
                     written all the code in a single module. Well, it is very important to write modular code. By modular, I mean to say that your code should be independent and should be loosely coupled.
@@ -45,12 +48,12 @@
                     ways to add something to the module.exports object to be exported. Let’s discuss these methods one by one.
                     </div>
                 <div class="post-like">
-                    <div><button class="post-btn" tabindex="-1"><i class="fas fa-thumbs-up"></i> Like</button></div>
-                    <div class="liked-people">Be the first one to like this!</div>
+                    <div><button id="likeBtn" class="post-btn" tabindex="-1"><i class="fas fa-thumbs-up"></i> <span id="like-text">Like</span></span></button></div>
+                    <div id="liked-people">Be the first one to like this!</div>
                 </div>
                 <div class="post-comment">
                    <textarea id="commentbox" placeholder="Leave a comment..."></textarea>
-                   <div><button class="post-btn" tabindex="-1"> Comment </button></div>
+                   <div><button id="submit-comment" class="post-btn" tabindex="-1"> Comment </button></div>
                    <div class="user-comments-title"><strong>All Comments</strong></div>
                    <div id="user-comments-section">
                         <div class="user-comment">Great post! Thanks!</div>

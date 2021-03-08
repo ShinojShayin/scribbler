@@ -126,3 +126,7 @@ header{
 .wd-98-per{
     width: 98%;
 }
+
+.hide{
+    display: none;
+}

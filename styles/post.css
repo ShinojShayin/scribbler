@@ -22,7 +22,7 @@
 .post-btn{
     background-color: #ED2553;
     color: white;
-    padding: 6px 12px;
+    padding: 10px 12px;
     font-size: 0.7em;
     box-shadow: 1px 4px 9px 0px #ed25537d;
     border: none;
@@ -47,7 +47,7 @@
     margin: 17px 0px;
 }
 
-.liked-people{
+#liked-people{
     font-family: 'Ubuntu Mono';
     font-size: 0.8em;
     margin-top: 10px;
@@ -69,10 +69,23 @@
 }
 
 .user-comment{
-    border-style: solid;
-    border-color: #eee;
-    border-width: 12px 8px 12px 8px;
-    padding: 10px;
+    background-color: white;
+    padding: 17px 10px;
     font-family: serif;
     font-size: 0.85em;
+    margin-bottom: 10px;
+}
+
+#user-comments-section{
+    background-color: #E2E4E6;
+    padding: 15px 8px 12px 8px;
+}
+
+.editable{
+    border:2px solid pink;
+    outline: none;
+}
+
+.editable:focus{
+    border:3px solid pink ;
 }
